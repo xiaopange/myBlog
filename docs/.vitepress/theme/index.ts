@@ -5,20 +5,20 @@ import DefaultTheme from 'vitepress/theme'
 // import './style.css'
 import './custom.css' // 自定义样式，演示修改主题色
 
-// export default {
-//   extends: DefaultTheme,
-//   Layout: () => {
-//     return h(DefaultTheme.Layout, null, {
-//       // https://vitepress.dev/guide/extending-default-theme#layout-slots
-//     })
-//   },
-//   enhanceApp({ app, router, siteData }) {
-//     // ...
-//   }
-// } satisfies Theme
-
-
 export default {
+  extends: DefaultTheme,
+  Layout: () => {
+    return h(DefaultTheme.Layout, null, {
+      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+    })
+  },
+  enhanceApp({ app, router, siteData }) {
+    // ...
+  }
+} satisfies Theme
+
+
+// export default {
    
-  ...DefaultTheme
-};
+//   ...DefaultTheme
+// };
