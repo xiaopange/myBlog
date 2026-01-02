@@ -18,3 +18,7 @@ pnpm-lock.yaml
 Thumbs.db
 # 日志文件
 *.log
+# 项目静态文件
+projectFiles/
+# trae IDE工作文件
+.trae/
